@@ -1,0 +1,25 @@
+.container{
+    height: 100%;
+    background-color: #222;
+    display: flex;
+}
+.item{
+    display: flex;
+    flex: 1;
+    position: relative;
+}
+.item
+.card {
+    flex: 1;
+    padding: 0 20px;
+}
+.title{
+    font-size: 18px;
+    color: #b7903c;
+}
+.text{
+    color: lightgray;
+}
+.moto{
+    color: rgba(211,211,211);
+}
