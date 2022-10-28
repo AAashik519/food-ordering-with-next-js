@@ -1,5 +1,6 @@
 .container {
     height: 100px;
+    width: 100%;
     padding: 0px 50px;
     background-color: #d1411e;
     display: flex;
@@ -83,5 +84,22 @@
     }
     .item:nth-child(1){
         flex: 3;
+    }
+ }
+
+
+ @media screen and (max-width:780px) {
+    .texts{
+        display: flex;
+        justify-content: center;
+        align-items: center;       
+ 
+    }
+    .text{
+      margin: 7px;
+      
+    }
+    .text:last-child{
+        font-size: 15px;
     }
  }
