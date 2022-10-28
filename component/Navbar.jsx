@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import styles from '../styles/Navbar.module.css'
+import Link from 'next/link'
 const Navbar = () => {
   return (
     <div className={styles.container} >  
@@ -15,9 +16,12 @@ const Navbar = () => {
              </div>
         <div className={styles.item}> 
                 <ul className={styles.list}>
-                    <li className={styles.listItem}> Home</li>
-                    <li className={styles.listItem}> Products</li>
-                    <li className={styles.listItem}> Menu</li>
+                    <li  className={styles.listItem}>
+                      <Link  href='/'> Home</Link>
+                    </li>
+                   
+                    <li className={styles.listItem}> 
+                    <Link href='/product'> Pizza's</Link></li>
                     <Image src='/img/logo.png' width='160px'  height='70px'/>
                     <li className={styles.listItem}> Events</li>
                     <li className={styles.listItem}> Blog</li>

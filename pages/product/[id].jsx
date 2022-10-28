@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import style from '../../styles/Product.module.css'
 import Image from 'next/image'
+import Link from 'next/link'
 const Product = () => {
     const [size , setSize]= useState(0)
     const Pizza ={
@@ -79,7 +80,9 @@ const Product = () => {
 
             <div className={style.add}>
                 <input type="number" defaultValue={1}  className={style.quantity}/>
+                <Link href='/cart'>
                 <button className={style.button}>Add to Cart</button>
+                </Link>
             </div>
 
         </div>
